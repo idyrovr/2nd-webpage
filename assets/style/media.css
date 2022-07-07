@@ -1,0 +1,121 @@
+@media (max-width: 992px) {
+    .container {
+        max-width: 944px;
+    }
+
+    .hero .row {
+        width: 93%;
+    }
+
+    .hero__card {
+        padding: 35px 0 35px 20px;
+    }
+
+    .hero__sm-title {
+        font-size: 19px;
+    }
+
+    .hero__btn_hollow {
+        color: #FFF;
+        border: 1px solid #00a0c1;
+        background-color: #00A0c1;
+    }
+
+    .rt__box-title {
+        font-size: 25px;
+    }
+
+    .service__lt-box {
+        max-width: 545px;
+    }
+
+    .clients__subscription {
+        width: 902px;
+    }
+
+    .footer__col a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .hero {
+        background: url(../images/Img1.png) no-repeat left/cover;
+    }
+
+    .hero__card {
+        height: 243px;
+    }
+
+    .features__lg-desc {
+        font-size: 14px;
+    }
+
+    .advice .grid__col-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service__box {
+        flex-wrap: wrap;
+    }
+
+    .service__lt-box {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .service__rt-box {
+        padding: 22px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+
+    }
+
+    .clients__subscription {
+        width: 100%;
+    }
+
+    .subscription__title {
+        font-size: 17px;
+    }
+
+    .subscription__text,
+    .subscription__btn {
+        height: 46px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 580px;
+    }
+    .hero .row {
+        width: 100%;
+        bottom: -19px;
+        position: static;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .hero .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero {
+        height: 100%;
+    }
+}
+
+@media (max-width: 416px) {
+
+}
