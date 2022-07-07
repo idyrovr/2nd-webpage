@@ -653,7 +653,12 @@ button {
     height: 393px;
     padding: 30px 0;
 }
+.contact__svg {
+    width: 73px;
+    height: 65px;
+    margin-bottom: 10px;
 
+}
 .contact__card {
     background-color: #FFF;
     height: 100%;
@@ -738,6 +743,7 @@ border-radius: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
     column-gap: 30px;
 }
+
 
 .footer__col a {
     display: block;
