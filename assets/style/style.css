@@ -44,16 +44,38 @@ button {
     width: 33.33333%;
 }
 
-.section__title {
-    transition: 0.5s;
+.section__titles {
+    position: relative;
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 0.2px;
     color: #252B42;
     text-align: center;
-}  
-.section__title:hover {
-    font-size: 60px;
+    transition: 0.5s;
+}
+.section__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    text-align: center;
+}
+.section__title:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -7px;
+    left: 50%;
+    background-color: #252B42;
+    width: 0%;
+    transition: 0.3s;
+    transform: translateX(-50%);
+
+}
+.section__title:hover:before {
+    display: block;
+    width: 70%;
 }
 
 .section__desc {
@@ -383,7 +405,7 @@ button {
 .features__card:hover svg {
     fill: #FFF;
 }
-.features__card:hover .section__title,
+.features__card:hover .section__titles,
 .features__card:hover .features__lg-desc {
     color: #FFF;
 }
@@ -494,11 +516,7 @@ button {
 
 }
 
-.service__sm_box:hover .rt__sm-title,
-.service__sm_box:hover .rt__sm-desc {
-    font-size: 15px;
 
-}
 /* .service__sm_box:hover {
     border: 1px solid #252B42;
 } */
@@ -539,9 +557,7 @@ button {
     text-align: left;
     margin-bottom: 10px;
 }
-.rt__box-title:hover {
-    font-size: 40px;
-}
+
 
 .rt__box-desc {
     text-align: left;
