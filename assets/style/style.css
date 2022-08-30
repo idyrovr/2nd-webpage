@@ -183,7 +183,10 @@ button {
 .header__burger {
     display: none;
 }
-
+.burger {
+    margin-bottom: 14px;
+    z-index: 1111;
+}
 .burger label {
     position: relative;
     display: block;
@@ -198,7 +201,7 @@ button {
     height: 2px;
     background-color:  #737373;
     right: 0;
-    top: -7px;
+    top: 14px;
     transition: 0.3s;
 }
 .burger label:after {
@@ -212,11 +215,11 @@ button {
     transition: 0.3s;
 }
 
-.burger input:checked + label {
-    width: 15px;
+.burger input:checked + label:before {
+    width: 10px;
 }
 .burger input:checked + label:after {
-    width: 10px;
+    width: 15px;
 }
 .burger__link {
     display: block;
@@ -228,16 +231,20 @@ button {
     color: #737373;
 }
 .burger__nav {
+    position: absolute;
+    top: -470px;
     padding: 30px 20px;
     width: 100%;
     left: 0;
     background-color: #F7F7F7;
     transition: .3s;
 }
-
-.burger__nav {
-    display: none;
+.burger input:checked ~ nav {
+    top: -13px;
 }
+
+
+
 
 /* HEADER */
 
@@ -271,7 +278,6 @@ button {
     color: #737373;
     margin: 35px 0;
     max-width: 376px;
-
 }
 
 .hero__btn {
@@ -315,8 +321,8 @@ button {
 }
 
 .hero .row {
-    gap: 30px;
     width: 1044px;
+    gap: 30px;
     bottom: -19px;
     position: absolute;
 }
